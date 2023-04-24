@@ -1,0 +1,124 @@
+h1 {
+	margin-left: 10%;
+    font-size: 5rem;
+    color: white;
+}
+
+form {
+	margin: 0 auto;
+	width: 50%;
+	padding: 20px;
+	background-color: aliceblue;
+	border-radius: 5px;
+}
+body{
+    background-color: #0067c7;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    background: #aaf;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 80%;
+    margin-bottom: 3.5%;
+}    
+    h2{
+        text-align: center;
+    color: white;}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="date"],
+select,
+input[type="number"],
+textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	resize: vertical;
+}
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    margin-left: 80%;
+    margin-top: 5%;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .esxsux{
+    text-align: center;
+  }
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #2e8644;
+  }
+#message {
+	margin: 20px auto;
+	width: 50%;
+	padding: 20px;
+	background-color: #e6ffe6;
+	border: 1px solid #00b300;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+}

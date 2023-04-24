@@ -1,0 +1,516 @@
+#title{
+    background-color: #fff;
+    
+}
+h1{
+    font-family: 'Montserrat';
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+    
+    color: black;
+
+
+}
+
+
+h2{
+    font-family: "Montserrat";
+    font-size: 2.7em;
+    line-height: 4rem;}
+
+.container-fluid{
+    padding-top: 0.3%;
+    padding-bottom: 11%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #fff;
+}
+body{
+    font-family: 'Montserrat-Black';
+}
+.navbar{
+    padding-bottom: 5rem;
+    
+    
+}
+
+.nav-item{
+    
+    color: black;
+    margin: 3% 0.7%;
+    
+    
+}
+
+.topmostdivlink{
+    color: #fff;
+    
+}
+.submenu{
+    color:#8f8f8f;
+}
+.nohover:hover{
+    color:black
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    color: black;
+}
+.nav-link{
+    font-size: 1rem;
+    font-family: "Montserrat";
+    color: black;
+    
+    
+    
+}
+.maindown{
+    margin-top: 10%;
+    margin-left: 0%;
+    font-size: 1rem;
+}
+.navitemcolor:hover{
+    color:blue
+
+}
+.download-button{
+    margin:12% 5% 5% 0%;
+}
+.image1{
+    width:30%;
+    
+    
+   
+    position: absolute;
+    /* right: 0.3%;*/
+    top: 21%;
+    right: 28%;
+}
+.image2{
+    width:29.5%;
+    position: absolute;
+    top: 21%;
+    right: 0%;
+}
+.image3{
+    position: absolute;
+    width:29.5%;
+    top:56.3%;
+    right: 0%;
+    
+}
+.image4{
+    position: absolute;
+    width:30%;
+    height: 38.9%;
+    top:56.3%;
+    right: 28%;
+}
+.gridimage{
+    height:200px;
+    width:250px;
+}
+.newhr{
+    content: "";
+      width: 200px;
+      height: 20px;
+      background: $aqua;
+      display: inline-block;
+      border: 2px solid $aqua;
+      @include border-radius(50%);
+}
+.loginbutton{
+  color: black;
+  
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.card-title{
+    font-weight: bold;
+    padding: 6% 3%;
+}
+h3{
+    font-family: 'Montserrat-Black';
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+}
+p{
+    color: #8f8f8f;
+}
+#features{
+    padding:7% 12% 5%;
+    background-color: #fff;
+    position: relative;
+   
+    
+    
+}
+
+  
+  
+
+.feature-box{
+    padding:5%;
+    text-align: center;
+}
+.icon{
+    margin-bottom: 1rem;
+    color: #ef8172;
+}
+.icon:hover{
+    color:#ff4c68;
+}
+
+
+#testimonials{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #0A2647;
+    color: #fff;
+    
+    
+}
+
+.testimonials-image{
+    border-radius: 100%;
+    width: 50%;
+    margin:30px;
+}
+.featuredtext{
+    font-style: italic;
+}
+.nametext{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.companytext{
+    font-size: 0.6rem;
+}
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.brandimage{
+    width:15%;
+    margin:20px 17px 20px;
+}
+.carousel-item{
+    padding:9%;
+}
+#pricing{
+    padding: 100px;
+    text-align: center;
+    background-color: #ECF2FF;
+}
+.pricing-col{
+    padding:3% 2%;
+}
+
+@media (max-width: 1000px){
+    #title{
+        text-align: center;
+    }
+    .image{
+        transform: rotate(0);
+        position: static;
+        width: 50%;
+    }
+    
+}
+#cta{
+    background-color: #ECF2FF;
+    color: black;
+    text-align: center;
+    padding: 6.3% 18% 9%;
+    font-size: 100px;
+    
+ 
+}
+.button1 {
+    width: 150px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .button1:hover {
+    background: black;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  
+.ctah3{
+    color: black;
+    font-size: 4rem;
+    line-height: 1.5;
+    font-family: "Montserrat";
+}
+.newbutton{
+
+margin: 1% 1%;
+
+}
+#footer{
+    background-color: #fff;
+    
+    padding: 6.3% 0% 7%;
+    text-align: center;
+    
+}
+.twitter{
+    margin-right: 80%;
+}
+.left{
+    margin-right: 100%;
+}
+.sux{
+    margin:2.5% 1.5%;
+}
+.logo{
+    margin-right: 3%;
+}
+.pricingfoto{
+  
+  width: 35%;
+  margin-left: 22%;
+}
+.headingpricing{
+  
+  background-color: #FEFBE9;
+  padding: 0% 3% ;
+}
+
+.topmostdiv{
+    height: auto;
+    width: auto;
+    background-color: #0779E4;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    padding:0.7% 0;
+    
+}
+.button2 {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    box-shadow: 0 5px 25px rgba(0, 0,0, .25);
+    border: none;
+    font-weight: bold;
+    font-family: "Monserrat-black";
+  }
+  
+  .button2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background: #0779E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+  }
+  
+  .button2 span:nth-child(2) {
+    background: #fff;
+    color: black;
+    overflow: hidden;
+    z-index: 2;
+    transition: .5s;
+    clip-path: polygon(50% 0%, 100% 0%,100% 100%,50% 100%,50% 53%);
+  }
+  
+  .button2 span:nth-child(2):hover {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 0 50%);
+  }
+  
+  .button2 span:nth-child(1):hover ~ span:nth-child(2) {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 100%50%);
+  }
+
+
+
+
+ .carouselheading{
+    font-size: 1.5rem;
+    
+    padding-top: 8%;
+ } 
+ .insidecarousel{
+    padding-top: 3%;
+    padding-bottom:5% ;
+    font-size: 11.5rem;
+    
+ }
+ /* .footercarousel{
+    
+ } */
+ .carousel-item{
+    padding-bottom: 15%;
+ }
+
+
+
+
+ 
+
+
+
+ .main {
+    padding-left: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoicing Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="payment.css">
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		label, input {
+			margin-bottom: 10px;
+			font-size: 1.2em;
+		}
+
+		input[type="submit"] {
+			padding: 10px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body><h1>Payments</h1>
+    <hr class="line">
+    
+    <h2> Add Invoice Payments ✅✅</h2>
+
+	<form onsubmit="event.preventDefault(); sendFormData()">
+		<label for="customer_id">Customer ID:</label>
+		<input type="text" id="customer_id" name="customer_id" required>
+
+		<label for="invoice_date">Invoice Date (YYYY-MM-DD):</label>
+		<input type="text" id="invoice_date" name="invoice_date" required>
+
+		<label for="invoice_total">Invoice Total:</label>
+		<input type="number" id="invoice_total" name="invoice_total" step="0.01" min="0" required>
+        
+		<label for="payment_mode">Payment Mode:</label>
+		<select id="payment_mode" name="payment_mode">
+			<option  class ="esxsux"value="Credit Card">Credit Card</option>
+			<option class ="esxsux" value="Debit Card">Debit Card</option>
+			<option  class ="esxsux" value="Cash">Cash</option>
+			<option  class ="esxsux" value="Check">Check</option>
+		</select>
+		
+		<input type="submit" value="Submit">
+	</form>
+
+	<script>
+		function sendFormData() {
+			const apiUrl = 'https://im147aenp3.execute-api.eu-north-1.amazonaws.com/dev'; // Replace with your API Gateway endpoint URL
+			const data = {
+				customer_id: document.getElementById('customer_id').value,
+				invoice_date: document.getElementById('invoice_date').value,
+				invoice_total: parseFloat(document.getElementById('invoice_total').value),
+				payment_mode:document.getElementById('payment_mode').value,
+			};
+			fetch(apiUrl, {
+				method: 'POST',
+				body: JSON.stringify(data)
+			})
+			.then(response => response.json())
+			.then(data => {
+				console.log(data);
+				alert('Invoice created with number: ' + data.invoice_number);
+			})
+			.catch(error => console.error(error));
+		}
+	</script>
+</body>
+</html>
+
+
+
+<!-- import boto3
+import datetime
+import json
+
+dynamodb = boto3.resource('dynamodb')
+table_name = 'newtable'
+
+def lambda_handler(event, context):
+    # Get the user input fields from the event
+    customer_id = event['customer_id']
+    invoice_date_str = event['invoice_date']
+	
+    invoice_total = event['invoice_total']
+
+    # Convert the invoice date string to a datetime object
+    invoice_date = datetime.datetime.strptime(invoice_date_str, '%Y-%m-%d')
+
+    # Generate the invoice number as a string in the format "YYYYMMDD-CUSTOMER_ID"
+    invoice_number = invoice_date.strftime('%Y%m%d') + '-' + customer_id
+	 #generate payment mode from the event 
+    payment_mode = event['payment_mode']
+   
+
+    # Create a new item in the DynamoDB table with the invoice data
+    table = dynamodb.Table(table_name)
+    item = {
+        'ID': invoice_number, # Use invoice_number as the primary key
+        'customer_id': customer_id,
+        'invoice_date': invoice_date_str,
+        'invoice_total': invoice_total
+    }
+    table.put_item(Item=item)
+
+    # Return the invoice data as a JSON object
+    response = {
+        'statusCode': 200,
+        'body': json.dumps({
+            'invoice_number': invoice_number,
+            'customer_id': customer_id,
+            'invoice_date': invoice_date_str,
+            'invoice_total': invoice_total,
+			'payment_mode':payment_mode
+        })
+    }
+    return response -->
+
+ <!-- -->
+   <!-- { 
+    "customer_id": "12345",
+    "invoice_date": "2022-05-01",
+    "invoice_total": 100.00,
+	"payment_mode": "Credit Card"
+  } -->
